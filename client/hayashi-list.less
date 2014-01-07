@@ -1,0 +1,76 @@
+@dark : #313131;
+@light : #efefef;
+@Helvetica : "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+.bg-cover{
+	background-repeat: no-repeat;
+	background-size: cover;
+    -moz-background-size: cover;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	font-family: @Helvetica;
+    font-weight: 300;
+    color: @light;
+    height: 100%;
+}
+
+body {
+	// background-image: url('http://static.simpledesktops.com/uploads/desktops/2013/12/09/desertsunset.png');
+	// background-image: url('http://static.simpledesktops.com/uploads/desktops/2013/08/09/space-RGB-01.png');
+	background-image: url('http://static.simpledesktops.com/uploads/desktops/2013/09/04/gfn_vinyldesktop.png');
+	.bg-cover;
+}
+
+.header {
+	background-color: fade(@dark,50%);
+	height: 23px;
+	padding: 9px 13px;
+	h4 {
+		margin-top: 0;
+		color: @light;
+	}
+	margin-bottom: 20px;
+}
+
+.main-list-container {
+	width: 80%;
+	margin: 0 auto;
+	font-size: 58px;
+	position: relative;
+}
+
+#list-title {
+	// padding: 0 10px;
+	text-transform: capitalize;
+	font-size: 1.2em;
+}
+
+#main-list {
+	li {
+		margin-bottom: 0.35em;
+
+		span {
+			border-bottom: 1px dashed @light;
+		}
+	}
+}
+
+// Globals
+[contenteditable="true"] {
+	outline: none;
+}
+
+input {
+	background: transparent;
+	border: none;
+	color: inherit;
+	outline: none;
+}
+
+
+.sideborders {
+	border-left: 1px solid fade(@dark, 80%);
+	border-right: 1px solid fade(@dark, 80%)
+}
